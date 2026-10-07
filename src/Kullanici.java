@@ -18,4 +18,5 @@ public class Kullanici {
     public String getId() {
         return id;
     }
+    
 }
