@@ -7,14 +7,12 @@ public class Main {
         kitap kitap2 = new kitap("1234aa", "Operating System", "zehra", 2024, "Mevcut");
         kitap kitap3 = new kitap("1234aaa", "Ekonomi", "Ayşe", 2023, "Mevcut");
 
-       
         System.out.println("=== Kutuphane Kitap Listesi ===");
         System.out.println("Kitap 1 Bilgileri -> " + kitap1.getKitapInfo());
         System.out.println("Kitap 2 Bilgileri -> " + kitap2.getKitapInfo());
         System.out.println("Kitap 3 Bilgileri -> " + kitap3.getKitapInfo());
         System.out.println();
 
-       
         KitapKopyasi kopya1 = kitap1.kopyaEkle("BARKOD-101");
         KitapKopyasi kopya2 = kitap2.kopyaEkle("BARKOD-102");
 
