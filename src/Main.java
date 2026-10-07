@@ -27,7 +27,6 @@ public class Main {
         OduncKaydi kayit1 = new OduncKaydi("ISLEM-001", bugun, teslim1, ogrenci1, kopya1);
         OduncKaydi kayit2 = new OduncKaydi("ISLEM-002", bugun, teslim2, ogrenci2, kopya2);
 
-      
         kayit1.kayitDetayiYazdir();
         System.out.println();
         kayit2.kayitDetayiYazdir();
