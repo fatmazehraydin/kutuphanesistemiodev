@@ -2,7 +2,7 @@ import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
-        // 1. Hocanin ekranindaki gibi birden fazla kitap olusturuyoruz
+       
         kitap kitap1 = new kitap("1234a", "Programlamaya Giris", "fatma", 2024, "Mevcut");
         kitap kitap2 = new kitap("1234aa", "Operating System", "zehra", 2024, "Mevcut");
         kitap kitap3 = new kitap("1234aaa", "Ekonomi", "Ayşe", 2023, "Mevcut");
