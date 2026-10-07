@@ -18,7 +18,6 @@ public class Main {
         KitapKopyasi kopya1 = kitap1.kopyaEkle("BARKOD-101");
         KitapKopyasi kopya2 = kitap2.kopyaEkle("BARKOD-102");
 
-       
         Kullanici ogrenci1 = new Kullanici("U101", "Fatma Zehra", "zehramail", "12345");
         Kullanici ogrenci2 = new Kullanici("U102", "Buse Çınar", "busecinarmail", "54321");
 
