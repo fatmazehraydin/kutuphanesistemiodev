@@ -14,4 +14,5 @@ public class KitapKopyasi {
     public kitap getAitOlduguKitap() {
         return aitOlduguKitap;
     }
+    
 }
