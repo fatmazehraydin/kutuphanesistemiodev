@@ -1,27 +1,51 @@
 import java.util.Date;
 
 public class OduncKaydi {
-    private String islemNo;
-    public Date oduncTarihi;
-    public Date sonTeslimTarihi;
-    private Kullanici kullanici;
-    private KitapKopyasi kitapKopyasi;
+    private int islemNo;
+    private Date oduncTarihi;
+    private Date sonTeslimTarihi;
+    private Date gercekTeslimTarihi;
+    private KitapKopyasi kopya;
+    private uye uye;
 
-    public OduncKaydi(String islemNo, Date oduncTarihi, Date sonTeslimTarihi, Kullanici kullanici, KitapKopyasi kitapKopyasi) {
+    public OduncKaydi(int islemNo, Date oduncTarihi, Date sonTeslimTarihi, KitapKopyasi kopya, uye uye) {
         this.islemNo = islemNo;
         this.oduncTarihi = oduncTarihi;
         this.sonTeslimTarihi = sonTeslimTarihi;
-        this.kullanici = kullanici;
-        this.kitapKopyasi = kitapKopyasi;
+        this.kopya = kopya;
+        this.uye = uye;
     }
 
-    public void kayitDetayiYazdir() {
-        System.out.println("=== Odunc Kaydi Bilgisi ===");
-        System.out.println("Islem No: " + islemNo);
-        System.out.println("Kullanici: " + kullanici.getAd());
-        System.out.println("Kitap: " + kitapKopyasi.getAitOlduguKitap().getBaslik());
-        System.out.println("Barkod: " + kitapKopyasi.getBarkodno());
-        System.out.println("Odunc Tarihi: " + oduncTarihi);
-        System.out.println("Son Teslim Tarihi: " + sonTeslimTarihi);
+    public boolean teslimEt() {
+        if (this.kopya != null) {
+            this.gercekTeslimTarihi = new Date();
+            this.kopya.iadeAl();
+            return true;
+        }
+        return false;
+    }
+
+    public int getIslemNo() {
+        return islemNo;
+    }
+
+    public Date getOduncTarihi() {
+        return oduncTarihi;
+    }
+
+    public Date getSonTeslimTarihi() {
+        return sonTeslimTarihi;
+    }
+
+    public Date getGercekTeslimTarihi() {
+        return gercekTeslimTarihi;
+    }
+
+    public KitapKopyasi getKopya() {
+        return kopya;
+    }
+
+    public uye getUye() {
+        return uye;
     }
 }
